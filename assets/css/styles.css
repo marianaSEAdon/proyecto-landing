@@ -1,0 +1,361 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --bq-sm:40rem; --bq-md:48rem; --bq-lg:64rem;
+    --color-bg: #fff;
+    --color-text: #333;
+    --color-primary: #007bff;
+    --color-primary-hover: #0056b3;
+    --color-success: #059669;
+    --color-error: #dc2626;
+    --color-warning: #d97706;
+    --color-muted: #6b7280;
+    --space-1: 0.25rem;
+    --space-2: 0.5rem;
+    --space-3: 1rem;
+    --space-4: 1.5rem;
+    --space-5: 3rem;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-bg);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+    list-style: none;
+}
+
+nav ul li a {
+    font-size: 17px;
+    transition: color 0.3s;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #888;
+}
+
+.hero {
+    height: 400px;
+    background-image: url('https://images.unsplash.com/photo-1567752588693-ad10a647c5a3?q=80&w=1460&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.content-hero {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.footer {
+    background-color: #222;
+    color: #eee;
+    padding: 25px 0;
+    margin-top: 40px;
+    font-family: system-ui, sans-serif;
+}
+
+.footer .container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer address {
+    margin: 0;
+    font-style: normal;
+    font-size: 15px;
+}
+
+.footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 8px 0 0 0;
+
+    display: flex;
+    gap: 20px;
+}
+
+.footer a {
+    color: #eee;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer a:hover {
+    color: #0d6efd; 
+}
+.cards{
+    display: flex;
+    gap: 50px;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+
+}
+h2{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 280px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.prd{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px 0;
+}
+
+.card-content h3{
+    font-size: 1.3rem;
+}
+
+.card-footer-custom {
+    margin-top: auto;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.price{
+    background-color: rgb(244, 247, 250);
+    color: black;
+    font-size: 80%;
+    font-weight: bold;
+    border-radius: 15px;
+    padding: 8px 12px;
+    text-align: center;
+    display: inline-block;
+}
+
+.card-bio{
+    font-size: 90%;
+}
+
+
+
+
+
+
+
+#contact {
+    padding: 80px 9%;
+}
+
+.contact-body {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+.form{
+    width: 100%;
+    max-width: 700px; 
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.field {
+    margin-bottom: var(--space-4);
+    width: 100%;
+}
+
+.field label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--space-1);
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f9f9f9;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--color-primary);
+    background: #fff;
+}
+
+.field .error {
+    display: block;
+    margin-top: var(--space-1);
+    color: var(--color-error);
+    font-size: var(--bq-sm);
+}
+
+.checkbox-label{
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-2);
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.checkbox-label input[type="checkbox"]{
+    width: auto;
+    margin-top: 0.25em;
+}
+
+.form-status{
+    margin-top: var(--space-4);
+    padding: var(--space-3);
+    border-radius: 10px;
+}
+
+.form-status[aria-live="polite"] {
+    margin-top: var(--space-4);
+    padding: var(--space-3);
+    border-radius: 10px;
+    font-weight: 500;
+    background-color: #f0f9ff;
+    color: var(--color-primary);
+}
+
+@media (max-width: 768px) {
+    .contact-body {
+        flex-direction: column;
+    }
+}
+
+.faq h2 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px 24px;
+    margin-bottom: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+    transition: box-shadow 0.3s ease;
+}
+
+.faq-item:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.faq-item summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    position: relative;
+    padding-right: 30px;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item p {
+    margin-top: 12px;
+    color: #555;
+    line-height: 1.6;
+}
