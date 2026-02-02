@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="#">Inicio</a></li>
                 <li><a href="#productos">Productos</a></li>
-                <li><a href="#faq">FA&Q</a></li>
+                <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contacto</a></li>
             </ul>
         </nav>
@@ -32,8 +32,8 @@
             </div>
         </section>
 
-        <section id="productos">
-            <h2>Productos</h2>
+        <section id="productos" aria-labelledby="products-heading">
+            <h2 id="products-heading" >Productos</h2>
             <div class="cards">
                 <div class="card">
                     <img class="prd"
@@ -123,6 +123,7 @@
                 </form>
                 <p class="form-status" aria-live="polite"></p>
             </div>
+            <div id="flash-messages" class="flash-messages"></div>
         </section>
     </main>
 

@@ -151,6 +151,11 @@ nav ul li a:hover {
 .footer a:hover {
     color: #0d6efd; 
 }
+
+#productos{
+    padding: 80px 9%;
+}
+
 .cards{
     display: flex;
     gap: 50px;
@@ -309,6 +314,11 @@ textarea:focus {
     .contact-body {
         flex-direction: column;
     }
+}
+
+#faq {
+    padding: 60px 9%;
+    scroll-margin-top: 90px;
 }
 
 .faq h2 {

@@ -31,3 +31,5 @@ document.addEventListener('DOMContentLoaded', function (){
     updateFooterYear();
     setupFormSimulatio();
 });
+
+document.forms[0].method
