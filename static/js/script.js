@@ -54,7 +54,36 @@ function showFlashMessage(message, category){
     }, 5000);
 }
 
+function setupNavbar() {
+    const btn = document.getElementById("menu-btn");
+    const menu = document.getElementById("navbar");
+
+    if (btn && menu) {
+        btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+        });
+    }
+}
+function setupNavbarScroll() {
+    const header = document.getElementById("header-fijo");
+    if (!header) return;
+
+    let isScrolled = false;
+
+    window.addEventListener("scroll", () => {
+        const shouldBeScrolled = window.scrollY > 50;
+
+        if (shouldBeScrolled !== isScrolled) {
+            isScrolled = shouldBeScrolled;
+
+            header.classList.toggle("bg-stone-800", isScrolled);
+            header.classList.toggle("shadow-md", isScrolled);
+        }
+    });
+}
 document.addEventListener('DOMContentLoaded', function (){
     updateFooterYear();
     setupContactForm();
+    setupNavbar();
+    setupNavbarScroll();
 });
