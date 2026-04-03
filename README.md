@@ -44,7 +44,7 @@ proyecto-landing/
 │   │   └── tailwind.css
 │   ├── img/
 │   │   └── faicon.png
-│   └── img/
+│   └── js/
 │       └── script.js
 ├── templates/
 │   └── index.html
